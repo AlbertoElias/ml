@@ -58,7 +58,7 @@ func GradientDescent(dataset []Data) (float64, float64) {
 	return theta0, theta1
 }
 
-func main() {
+func mainWeek1() {
 	theta0, theta1 := GradientDescent(GenerateFakeData())
 	fmt.Println(fmt.Sprintf("The value for 3 with theta0 %.6f and theta1 %.6f is: %.6f", theta0, theta1, Hypothesis(theta0, theta1, 3)))
 }

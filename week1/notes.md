@@ -26,7 +26,7 @@ hθ (x) = θ0 + θ1 * x
 
 Measures the accuracy of the hypothesis function taking the average of all the results of the hypothesis with all the inputs
 
-J(θ0, θ1) = (1 / 2 * m) * ∑(hθ(xi) - yi) ^ 2
+J(θ0, θ1) = (1 / (2 * m)) * ∑(hθ(xi) - yi) ^ 2
 
 ## Gradient Descent
 
