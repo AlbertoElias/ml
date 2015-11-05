@@ -22,7 +22,7 @@ J(θ) = (1 / (2 * m)) * ∑(hθ(xi) - yi) ^ 2
 
 Adding the derivative of θj:
 
-θj := θj - α * (1 / m) * ∑((hθ(xi) - yi) * xi)
+θj := θj - α * (1 / m) * ∑((hθ(xi) - yi) * x(j)i)
 
 ### Feature scaling
 
@@ -64,7 +64,7 @@ Derivative of J(θ) = 0
 
 Equation:
 
-θ = ((XT * X) ^ (−1)) XT * y
+θ = ((XT * X) ^ (−1)) * XT * y
 
 - No need for feature scaling
 - No need for alpha

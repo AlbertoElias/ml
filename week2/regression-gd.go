@@ -29,8 +29,6 @@ func AdjustX(originalx []float64) []float64 {
 }
 
 func Hypothesis(theta []float64, x []float64) float64 {
-	fmt.Println(len(theta), theta)
-	fmt.Println(len(x), x)
 	if len(theta) != len(x) {
 		panic("Vectors theta and x need to have same amount of values")
 	}
