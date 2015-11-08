@@ -14,7 +14,11 @@ T = transpose
 
 Now we just take the vector θ
 
-J(θ) = (1 / (2 * m)) * ∑(hθ(xi) - yi) ^ 2
+J(θ) = (1 / (2 * m)) * ∑(hθ(xi) - yi)^2
+
+In the multivariate case, it can also be written in this vectorized form:
+
+J(θ) = (1 / (2 * m)) * (X * θ - y)T * (Xθ - y)
 
 ## Gradient Descent
 

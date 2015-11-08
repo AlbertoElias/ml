@@ -18,12 +18,14 @@ for iter = 1:num_iters
     %
 
 
+features = size(X, 2);
+temptheta = zeros(features, 1);
 
+for i = 1:features
+    temptheta(i) = theta(i) - alpha * (1 / m) * sum((Hypothesis(X, theta) - y) .* X(:,i));
+end
 
-
-
-
-
+theta = temptheta;
 
 
 

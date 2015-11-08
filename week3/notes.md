@@ -1,17 +1,21 @@
 # Classification with Logistic Regression
 
+## Hypothesis
+
 y is a value in {0, 1}, so we want 0 <= hθ(x) <= 1
 hθ(x) = g(θT * X)
 g(z) = 1 / ( 1 + e^(-z) )
 
-*Sigmoid function* or *Logistic function*
+**Sigmoid function** or **Logistic function**
 
 We can't use linear regression because it can return values outside of 0-1, and depending on the X values, 
 
 hθ(x) = estimated probability that y = 1 on input x
+
 hθ(x) = p(y=1|x;θ) _probability that y = 1, given x, parameterized by θ_
 
 g(z) >= 0.5 whenever z >= 0
+
 hθ(x) = g (θT * X) >= 0 whenever θT * X >= 0
 
 ![logistic function representation](images/logistic_regression_representation.jpg)
@@ -81,7 +85,7 @@ On new input x, pick the class i that maximizes hθi(x)
 
 # Regularization
 
-We sometimes have the problem of overfitting, using a very high order polynomial when a quadratic function is more than enough, and possible even more precise.
+We sometimes have the problem of overfitting, using a very high order polynomial when a quadratic function is more than enough, and possibly even more precise.
 
 Regularization penalizes θ parameters
 

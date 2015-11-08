@@ -14,7 +14,9 @@ J = 0;
 %               You should set J to the cost.
 
 
+SquareError = sum((Hypothesis(X, theta) - y) .^ 2);
 
+J = SquareError / (2 * m)
 
 
 % =========================================================================
