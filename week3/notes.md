@@ -45,7 +45,7 @@ Can be made compact:
 
 Cost(hθ(x), y) = -y(log(hθ(x)) - (1-y)log(1 - hθ(x)))
 
-As the first term gets cancelled if y = 0, ant the second term gets cancelled when y = 1
+As the first term gets cancelled if y = 0, and the second term gets cancelled when y = 1
 
 We take the negative sign outside:
 
