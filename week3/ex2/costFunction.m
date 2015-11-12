@@ -20,11 +20,16 @@ grad = zeros(size(theta));
 % Note: grad should have the same dimensions as theta
 %
 
+pos = -y .* log(Hypothesis(X, theta));
+neg = (1 - y) .* log(1 - Hypothesis(X, theta));
+J = sum(pos - neg) / m;
 
+tempgrad = zeros(size(theta));
+for i = 1:size(theta)
+	tempgrad(i) = sum((Hypothesis(X, theta) - y) .* X(:,i)) / m;
+end
 
-
-
-
+grad = tempgrad;
 
 
 % =============================================================

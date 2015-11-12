@@ -18,8 +18,17 @@ grad = zeros(size(theta));
 %               derivatives of the cost w.r.t. each parameter in theta
 
 
+pos = -y .* log(Hypothesis(X, theta));
+neg = (1 - y) .* log(1 - Hypothesis(X, theta));
+J = (1 / m) * sum(pos - neg) + (lambda / (2 * m)) * sum(theta(2:length(theta),1) .^ 2);
 
+tempgrad = zeros(size(theta));
+tempgrad(1) = sum((Hypothesis(X, theta) - y) .* X(1)) / m;
+for i = 2:size(theta)
+	tempgrad(i) = (1 / m) * sum((Hypothesis(X, theta) - y) .* X(:,i)) + (lambda / m) .* theta(i);
+end
 
+grad = tempgrad;
 
 
 % =============================================================

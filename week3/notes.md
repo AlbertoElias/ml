@@ -3,7 +3,9 @@
 ## Hypothesis
 
 y is a value in {0, 1}, so we want 0 <= hθ(x) <= 1
+
 hθ(x) = g(θT * X)
+
 g(z) = 1 / ( 1 + e^(-z) )
 
 **Sigmoid function** or **Logistic function**
