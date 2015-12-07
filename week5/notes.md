@@ -11,7 +11,7 @@
 - First part of the equation: For each feature, we loop over the output nodes
 - Second part: 
     - We loop over all the Thetas (one per layer except the output layer)
-    - We loop over the colums in the current matrix, which is equal to the number of nodes in our current layer, including the bias unit
+    - We loop over the columns in the current matrix, which is equal to the number of nodes in our current layer, including the bias unit
     - We loop over the rows in the current matrix, which is equal to the number of nodes in the next layer
 
 ## Backpropagation algorithm
@@ -42,7 +42,7 @@ So the partial derivative of J(Θ) is:
 
 ![Partial derivative of J](images/derivative_J.png)
 
-The produces matrix is the same dimension as Θ(l). The process produces a gradient term for every element in Θ(l).
+The producesd matrix is the same dimension as Θ(l). The process produces a gradient term for every element in Θ(l).
 
 ### Algorithm
 
